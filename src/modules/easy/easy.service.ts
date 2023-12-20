@@ -48,7 +48,7 @@ export class EasyService {
     }
     return false;
   }
-  create(createEasyDto: CreateEasyDto) {
+  mapSESEvent(createEasyDto: CreateEasyDto) {
     const map = {
       'Records[0].ses.receipt.spamVerdict.status': {
         key: 'spam',

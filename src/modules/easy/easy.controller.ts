@@ -10,7 +10,7 @@ export class EasyController {
 
   @Post()
   @ApiOkResponse({ status: 201, description: 'Test', type: Response })
-  create(@Body() createEasyDto: CreateEasyDto) {
-    return this.easyService.create(createEasyDto);
+  mapSESEvent(@Body() createEasyDto: CreateEasyDto) {
+    return this.easyService.mapSESEvent(createEasyDto);
   }
 }
